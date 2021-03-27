@@ -15,30 +15,35 @@ Based on the work by  [Janssen, et. al. (2015)](https://dspace.library.uu.nl/han
 
 The following sections describe the experiments and link to the code used on each one.
 
+ * [How it works?](#how-it-works?)
  * [Controlled Experiments](#controlled-experiments)
  * [Comparison with Expert annotations](#Comparison-with-expert-annotations)
  * [Case study using Impro-Visor](#case-study-using-impro-visor)
 
 ## How it works?
 
-$$ AlRyNo(A,B) = (1 - \frac{|SCLM_{A,B}|}{\max{(|A|,|B|)}}) $$
+The formal definition represents the relation between the length of the Longest Common Subsequence (*LCS*) and the length of the longest melody from the two compared melodies *A* and *B*.
+
+$$ AlRyNo(A,B) = (1 - \frac{LCS_{A,B}}{\max{(|A|,|B|)}}) $$
 
 $$ 
 
+Given two melodies *A* and *B* represented as sequences of pitch classes (pitches without considering the octave), the LCS can be obtained following a modified version of the Local Alignment algorithm as follows:
 
 \begin{split}
-    SCLM(i,j) =&
+    LCS(i,j) =&
     \begin{cases} 
         0, \text{if } i=0 \text{ or } j=0 \\
         \\
-        SCLM(i - 1,j - 1) + 1, \\ \text{ if } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / C_E\\
+        LCS(i - 1,j - 1) + 1, \\ \text{ if } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / CE\\
         \\
-        \max{(SCLM(i - 1,j), SCLM(i,j - 1))}, \\ \text{ otherwise }\\
+        \max{(LCS(i - 1,j), LCS(i,j - 1))}, \\ \text{ otherwise }\\
     \end{cases}
 \end{split}
 
-
 $$
+
+Where *T* is the array with the time differences between consecutive notes in the sequence and *CE* is the scale which handles the threshold in the time difference to still be considered a match. Experimentally the overall best results were obtained with *CE=64*. The first call of *LCS* is passing as arguments *i* and *j* equal to the corresponding lengths of the sequences.
 
 ## Controlled Experiments
 
