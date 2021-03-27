@@ -72,38 +72,38 @@ The following melodies were used:
 ### Grammar Solo - Miles Davis
   Using the pre-built grammar for Miles Davis in Impro-Visor, 5 melodies of similar length of 12 measures were generated.
     
-    1. 
-    2.
-    3.
-    4.
-    5.
+{% include embed-audio.html src="./audios/MilesDavis/WAV_Grammar_SOLO_LEN12/MilesDavis_Grammar_SOLO_LEN12_001.wav" %}
+{% include embed-audio.html src="./audios/MilesDavis/WAV_Grammar_SOLO_LEN12/MilesDavis_Grammar_SOLO_LEN12_002.wav" %}
+{% include embed-audio.html src="./audios/MilesDavis/WAV_Grammar_SOLO_LEN12/MilesDavis_Grammar_SOLO_LEN12_003.wav" %}
+{% include embed-audio.html src="./audios/MilesDavis/WAV_Grammar_SOLO_LEN12/MilesDavis_Grammar_SOLO_LEN12_004.wav" %}
+{% include embed-audio.html src="./audios/MilesDavis/WAV_Grammar_SOLO_LEN12/MilesDavis_Grammar_SOLO_LEN12_005.wav" %}
 
 ### Grammar Solo - Charlie Parker
   Using the pre-built grammar for Charlie Parker in Impro-Visor, 5 melodies of similar length of 12 measures were generated.
 
-    1. 
-    2.
-    3.
-    4.
-    5.
+{% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_001.wav" %}
+{% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_002.wav" %}
+{% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_003.wav" %}
+{% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_004.wav" %}
+{% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_005.wav" %}
 
 ### Trading - Caleb & Charlie Parker
   With an active trade using 2 measures for each turn for a total of 12 measures, the co-author was asked to improvise using the prebuilt grammar of Charlie Parker.
 
-    1. 
-    2.
-    3.
-    4.
-    5.
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola1.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola2.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola3.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola4.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola5.wav" %}
   
 ### Trading - Caleb & Miles Davis
   With an active trade using 2 measures for each turn for a total of 12 measures, the co-author was asked to improvise using the prebuilt grammar of Miles Davis.
 
-    1. 
-    2.
-    3.
-    4.
-    5.
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola1.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola2.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola3.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola4.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola5.wav" %}
 
 ### Results
 AlRyNo:
