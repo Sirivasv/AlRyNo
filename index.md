@@ -71,7 +71,7 @@ The following melodies were used:
 ### Grammar Solo - Miles Davis
   Using the pre-built grammar for Miles Davis in Impro-Visor, 5 melodies of similar length of 12 measures were generated.
     
-    1. 
+    1. [1](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
     2.
     3.
     4.
