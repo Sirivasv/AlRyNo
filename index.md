@@ -26,9 +26,10 @@ The formal definition represents the relation between the length of the Longest 
 
 $$ AlRyNo(A,B) = (1 - \frac{LCS_{A,B}}{\max{(|A|,|B|)}}) $$
 
-$$ 
 
 Given two melodies *A* and *B* represented as sequences of pitch classes (pitches without considering the octave), the LCS can be obtained following a modified version of the Local Alignment algorithm as follows:
+
+$$ 
 
 \begin{split}
     LCS(i,j) =&
