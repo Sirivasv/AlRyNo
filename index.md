@@ -36,7 +36,7 @@ $$
     \begin{cases} 
         0, \text{if } i=0 \text{ or } j=0 \\
         \\
-        LCS(i - 1,j - 1) + 1, \\ \text{ if } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / CE\\
+        LCS(i - 1,j - 1) + 1, \\ \text{ if } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ \frac{(T_{A}[i] + T_{B}[i])}{CE}\\
         \\
         \max{(LCS(i - 1,j), LCS(i,j - 1))}, \\ \text{ otherwise }\\
     \end{cases}
