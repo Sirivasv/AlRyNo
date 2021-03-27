@@ -64,19 +64,10 @@ The following melodies were used:
 
 [probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
 
-![probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-
-[](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-
-![](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-
 {% include embed-audio.html src="https://github.com/Sirivasv/AlRyNo_draft/blob/gh-pages/audios/CalebRascon/WAV_CORPUS/rola1.wav?raw=true" %}
 
-  1. [probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-  2. [](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-  3. ![probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-  4. ![4](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-  5. ![](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
+  1.
+  2. 
 
 ### Grammar Solo - Miles Davis
   Using the pre-built grammar for Miles Davis in Impro-Visor, 5 melodies of similar length of 12 measures were generated.
