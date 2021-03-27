@@ -70,6 +70,10 @@ The following melodies were used:
 
 ![](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
 
+{% include embed-audio.html src="https://github.com/Sirivasv/AlRyNo_draft/blob/gh-pages/audios/CalebRascon/WAV_CORPUS/rola1.wav?raw=true" %}
+
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola1.wav" %}
+
   1. [probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
   2. [](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
   3. ![probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
