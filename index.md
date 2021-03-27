@@ -62,12 +62,19 @@ The following melodies were used:
 ### Corpus - Caleb
   Original pieces composed by co-author Caleb Rascon, they are 12 measures in length.
 
-[probando](./audios/CalebRascon/WAV_CORPUS/rola1.wav)
-
+1. 
 {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola1.wav" %}
 
-  1.
-  2. 
+2. 
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola2.wav" %}
+
+3. 
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola3.wav" %}
+4. 
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola4.wav" %}
+5. 
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola5.wav" %}
+
 
 ### Grammar Solo - Miles Davis
   Using the pre-built grammar for Miles Davis in Impro-Visor, 5 melodies of similar length of 12 measures were generated.
