@@ -1,3 +1,5 @@
+{% include latex-support.html %}
+
 # AlRyNo 
 
 This is the description page for AlRyNo, a symbolic music similarity measure using a modified version of local alignment. AlRyNo uses a substitution function which consider the pitch class and the difference in the onset for each possible match.
@@ -16,6 +18,10 @@ The following sections describe the experiments and link to the code used on eac
  * [Controlled Experiments](#controlled-experiments)
  * [Comparison with Expert annotations](#Comparison-with-expert-annotations)
  * [Case study using Impro-Visor](#case-study-using-impro-visor)
+
+## How it works?
+
+$$ AlRyNo(A,B) = (1 - \frac{|SCLM_{A,B}|}{\max{(|A|,|B|)}}) $$
 
 ## Controlled Experiments
 
