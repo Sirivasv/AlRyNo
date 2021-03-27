@@ -1,0 +1,34 @@
+
+(substitution
+	(name eighth-first-rel-pitch-none)
+	(type motif)
+	(enabled true)
+	(weight 1)
+	(transformation
+		(description rel-pitch-none)
+		(weight 92)
+		(enabled true)
+		(source-notes  n1)
+		(guard-condition  (and	(duration>=	(duration  n1)
+							8)
+					(not  (rest?  n1))
+					(=	(note-category  n1)
+						X)
+					(=	(relative-pitch  n1)
+						none)))
+		(target-notes  (multiply-duration	1.0
+							(transpose-chromatic  0.0 n1)))))
+(substitution
+	(name eighth-first-rel-pitch-rest)
+	(type motif)
+	(enabled true)
+	(weight 1)
+	(transformation
+		(description rel-pitch-rest)
+		(weight 12)
+		(enabled true)
+		(source-notes  n1)
+		(guard-condition  (and	(duration>=	(duration  n1)
+							8)
+					(rest?  n1)))
+		(target-notes  n1)))
