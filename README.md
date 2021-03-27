@@ -1,2 +1,2 @@
-# AlRyNo_draft
-Draft Repository for AlRyNo.
+# AlRyNo
+Repository for AlRyNo.
