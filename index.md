@@ -23,6 +23,21 @@ The following sections describe the experiments and link to the code used on eac
 
 $$ AlRyNo(A,B) = (1 - \frac{|SCLM_{A,B}|}{\max{(|A|,|B|)}}) $$
 
+$$ 
+
+
+\begin{split}
+    SCLM(i,j) =&
+    \begin{cases} 
+        0, \text{si } i=0 \text{ o } j=0 \\
+        SCLM(i - 1,j - 1) + 1, \\ \text{ si } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / C_E\\
+        \max{(SCLM(i - 1,j), SCLM(i,j - 1))}, \\ \text{ otherwise }\\
+    \end{cases}
+\end{split}
+
+
+$$
+
 ## Controlled Experiments
 
 In these experiments a melody is modified with 4 types of modifications and by percentages (10, 20, ..., 100). The expected value from each similarity measure after normalization should be equal to the percentage of the modification, for example a melody modified by 10% should have a distance of 0.1 with the original, and of 1.0 for a 100% modification.
