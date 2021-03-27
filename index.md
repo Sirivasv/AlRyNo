@@ -62,15 +62,11 @@ The following melodies were used:
 ### Corpus - Caleb
   Original pieces composed by co-author Caleb Rascon, they are 12 measures in length.
 
-1. {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola1.wav" %}
-2. {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola2.wav" %}
-3.
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola1.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola2.wav" %}
 {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola3.wav" %}
-
-* 
 {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola4.wav" %}
-
-* {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola5.wav" %}
+{% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola5.wav" %}
 
 
 ### Grammar Solo - Miles Davis
