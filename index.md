@@ -29,8 +29,10 @@ $$
 \begin{split}
     SCLM(i,j) =&
     \begin{cases} 
-        0, \text{si } i=0 \text{ o } j=0 \\
-        SCLM(i - 1,j - 1) + 1, \\ \text{ si } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / C_E\\
+        0, \text{if } i=0 \text{ or } j=0 \\
+        \\
+        SCLM(i - 1,j - 1) + 1, \\ \text{ if } \\ A[i] = B[j] \bigwedge (T_{A}[i] - T_{B}[i]) < \\ (T_{A}[i] + T_{B}[i]) / C_E\\
+        \\
         \max{(SCLM(i - 1,j), SCLM(i,j - 1))}, \\ \text{ otherwise }\\
     \end{cases}
 \end{split}
