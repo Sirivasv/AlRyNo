@@ -114,3 +114,5 @@ Local Alignment:
 ![Image](./images/2DPlane_LocalAlignment.png)
 Euclidean Distance:
 ![Image](./images/2DPlane_EuclideanDistance.png)
+
+The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/AlRyNo/tree/main/CaseStudy).
