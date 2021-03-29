@@ -135,13 +135,19 @@ The following melodies were used:
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola5.wav" %}
 
 ### Results
-AlRyNo:
+**AlRyNo**:
 ![Image](./images/2DPlane_AlRyNo.png)
-SIAM:
+**SIAM**:
 ![Image](./images/2DPlane_SIAM.png)
-Local Alignment:
+**Local Alignment**:
 ![Image](./images/2DPlane_LocalAlignment.png)
-Euclidean Distance:
+**Euclidean Distance**:
 ![Image](./images/2DPlane_EuclideanDistance.png)
+**BSPLINE**:
+![Image](./images/2DPlane_BSPLINE.png)
+**Correlatinon Distance**:
+![Image](./images/2DPlane_CORR.png)
+**City Block Distance**:
+![Image](./images/2DPlane_CBD.png)
 
 The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/AlRyNo/tree/main/CaseStudy).
