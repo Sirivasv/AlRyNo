@@ -1,8 +1,8 @@
 {% include latex-support.html %}
 
-# AlRyNo 
+# RNA (Rhythm-Note Alignment)
 
-This is the description page for AlRyNo, a symbolic music similarity measure using a modified version of local alignment. AlRyNo uses a substitution function which consider the pitch class and the difference in the onset for each possible match.
+This is the description page for RNA, a symbolic music similarity measure using a modified version of local alignment. RNA uses a substitution function which consider the pitch class and the difference in the onset for each possible match.
 We also present a comparison made with these other similarity measures:
   * Euclidean Distance
   * Correlation Distance
@@ -24,7 +24,7 @@ The following sections describe the experiments and link to the code used on eac
 
 The formal definition represents the relation between the length of the Longest Common Subsequence (*LCS*) and the length of the longest melody from the two compared melodies *A* and *B*.
 
-$$ AlRyNo(A,B) = (1 - \frac{LCS_{A,B}}{\max{(|A|,|B|)}}) $$
+$$ RNA(A,B) = (1 - \frac{LCS_{A,B}}{\max{(|A|,|B|)}}) $$
 
 
 Given two melodies *A* and *B* represented as sequences of pitch classes (pitches without considering the octave), the LCS can be obtained following a modified version of the Local Alignment algorithm as follows:
@@ -60,7 +60,7 @@ The tested modifications made on the melody are:
 
 The experiments were conducted using implementations based from [Janssen](https://github.com/BeritJanssen/MelodicOccurrences) and [Urbano](https://github.com/julian-urbano/MelodyShape) in the case of BSpline.
 
-The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/AlRyNo_draft/tree/main/ControlledExperiments).
+The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/RNA/tree/main/ControlledExperiments).
 
 ### Results
 
@@ -75,12 +75,25 @@ Average Difference by Modification Type:
 
 As reviewed in [Janssen, et. al. (2017)](https://www.tandfonline.com/doi/pdf/10.1080/09298215.2017.1316292) a classification can be made on the matches found when comparing two melodies in order to compare it with the experts annotations by varying the threshold and ploting the ROC curve.
 
-A modified version of this experiment was made, the main difference is using the similarity measures on all the possible comparissons annotated, that is compare each phrase of each tune to each other per tune family using all 7 similarity measures. The annotations are converted to 0 (identical), 0.5 (somewhat similar) and 1.0 (distinct). To make a binary classification we took the 0.5 annotations to 1.0. The reported graph is by taking the majority annotation, if no annotation has the majority the segment is not considered.
+A modified version of this experiment was made, the main difference is using the similarity measures on all the possible comparissons annotated, that is compare each phrase of each tune to each other per tune family using all 7 similarity measures. The annotations are converted to 0 (identical), 0.5 (somewhat similar) and 1.0 (distinct). To make binary classifications we filtered and splited the data for 3 disctinct experiments. Each experiment took a pair to make the classification. The 3 possible pairs are: 0-0.5, 0.5-1 and 0-1. The reported graph is by taking the majority annotation, if no annotation has the majority the segment is not considered. And for further analysis the same experiments were replicated with filtered segments with an unanimity votes.
 
-The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/AlRyNo_draft/tree/main/ROC_Analysis). The notebook with the results can be found [here](https://github.com/Sirivasv/AlRyNo_draft/blob/main/ROC_Analysis/ROC_ANALYSIS.ipynb).
+The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/RNA/tree/main/ROC_Analysis). The notebook with the results can be found [here](https://github.com/Sirivasv/RNA/blob/main/ROC_Analysis/ROC_ANALYSIS.ipynb).
 
-### Results
-![Image](./images/ROC_7.png)
+### Results Majority Vote
+#### Classification (0-0.5)
+![Image](./images/ROC_MAJ_0_05.png)
+#### Classification (0.5-1)
+![Image](./images/ROC_MAJ_05_1.png)
+#### Classification (0-1)
+![Image](./images/ROC_MAJ_0_1.png)
+
+### Results Unanimity Vote
+#### Classification (0-0.5)
+![Image](./images/ROC_UNAN_0_05.png)
+#### Classification (0.5-1)
+![Image](./images/ROC_UNAN_05_1.png)
+#### Classification (0-1)
+![Image](./images/ROC_UNAN_0_1.png)
 
 ## Case study using Impro-Visor
 
@@ -135,8 +148,8 @@ The following melodies were used:
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola5.wav" %}
 
 ### Results
-**AlRyNo**:
-![Image](./images/2DPlane_AlRyNo.png)
+**RNA**:
+![Image](./images/2DPlane_RNA.png)
 **SIAM**:
 ![Image](./images/2DPlane_SIAM.png)
 **Local Alignment**:
@@ -150,4 +163,4 @@ The following melodies were used:
 **City Block Distance**:
 ![Image](./images/2DPlane_CBD.png)
 
-The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/AlRyNo/tree/main/CaseStudy).
+The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/RNA/tree/main/CaseStudy).
