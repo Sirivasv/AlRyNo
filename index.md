@@ -79,7 +79,7 @@ A modified version of this experiment was made, the main difference is using the
 
 The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/RNA/tree/main/ROC_Analysis). The notebook with the results can be found [here](https://github.com/Sirivasv/RNA/blob/main/ROC_Analysis/ROC_ANALYSIS.ipynb).
 
-### Results Majority Vote
+### Results using Majority Vote
 #### Classification (0-0.5)
 ![Image](./images/ROC_MAJ_0_05.png)
 #### Classification (0.5-1)
@@ -87,7 +87,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 #### Classification (0-1)
 ![Image](./images/ROC_MAJ_0_1.png)
 
-### Results Unanimity Vote
+### Results using Unanimity Vote
 #### Classification (0-0.5)
 ![Image](./images/ROC_UNAN_0_05.png)
 #### Classification (0.5-1)
