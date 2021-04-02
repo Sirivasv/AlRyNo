@@ -97,12 +97,12 @@ The corresponding Jupyter notebooks can be found in this respository following t
 
 ## Case study using Impro-Visor
 
-We used Impro-Visor to test the similarity measures that had the best results in our controlled experiments and for comparison is included a simple measure that is Euclidean Distance. For each group of melodies the similarity was calculated for the X axis to the Corpus created by the user. For the Y axis it was calculated with the corresponding solos of the composer pre-built grammar. For example the Tradings between Caleb and Miles Davis were compared with Caleb's corpus for the X axis and with the grammar solos of Miles Davis for the Y axis.
+We used Impro-Visor to test the similarity measures that had the best results in our controlled experiments and for comparison is included a simple measure that is Euclidean Distance. For each group of melodies the similarity was calculated for the X axis to the Corpus created by the user. For the Y axis it was calculated with the corresponding solos of the composer pre-built grammar. For example the Tradings between User and Miles Davis were compared with User's corpus for the X axis and with the grammar solos of Miles Davis for the Y axis.
 
 The following melodies were used:
 
-### Corpus - Caleb
-  Original pieces composed by co-author Caleb Rascon, they are 12 measures in length.
+### Corpus - User
+  Original pieces composed by an User, they are 12 measures in length.
 
 {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola1.wav" %}
 {% include embed-audio.html src="./audios/CalebRascon/WAV_CORPUS/rola2.wav" %}
@@ -129,8 +129,8 @@ The following melodies were used:
 {% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_004.wav" %}
 {% include embed-audio.html src="./audios/CharlieParker/WAV_Grammar_SOLO_LEN12/CharlieParker_Grammar_SOLO_LEN12_005.wav" %}
 
-### Trading - Caleb & Charlie Parker
-  With an active trade using 2 measures for each turn for a total of 12 measures, the co-author was asked to improvise using the prebuilt grammar of Charlie Parker.
+### Trading - User & Charlie Parker
+  With an active trade using 2 measures for each turn for a total of 12 measures, the User was asked to improvise using the prebuilt grammar of Charlie Parker.
 
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola1.wav" %}
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola2.wav" %}
@@ -138,8 +138,8 @@ The following melodies were used:
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola4.wav" %}
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_CharlieParker/trade_Caleb_CharlieParker_rola5.wav" %}
   
-### Trading - Caleb & Miles Davis
-  With an active trade using 2 measures for each turn for a total of 12 measures, the co-author was asked to improvise using the prebuilt grammar of Miles Davis.
+### Trading - User & Miles Davis
+  With an active trade using 2 measures for each turn for a total of 12 measures, the user was asked to improvise using the prebuilt grammar of Miles Davis.
 
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola1.wav" %}
 {% include embed-audio.html src="./audios/CalebRascon/WAV_Grammar_TRADE_Miles/trade_Caleb_Miles_rola2.wav" %}
@@ -156,11 +156,6 @@ The following melodies were used:
 ![Image](./images/2DPlane_LocalAlignment.png)
 **Euclidean Distance**:
 ![Image](./images/2DPlane_EuclideanDistance.png)
-**BSPLINE**:
-![Image](./images/2DPlane_BSPLINE.png)
-**Correlatinon Distance**:
-![Image](./images/2DPlane_CORR.png)
-**City Block Distance**:
-![Image](./images/2DPlane_CBD.png)
+
 
 The corresponding Jupyter notebooks can be found in this respository following this [link](https://github.com/Sirivasv/RNA/tree/main/CaseStudy).
