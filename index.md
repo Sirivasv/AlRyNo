@@ -104,6 +104,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 ### Summary of F1 Scores
 #### Majority Vote
 
+
 | Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
 | :---: |:---: | :---: | :---: |
 | RNA | 0.7205 | **0.9309** | 0.9521 |
@@ -113,7 +114,10 @@ The corresponding Jupyter notebooks can be found in this respository following t
 | ED | 0.6915 | 0.9281 | 0.9372 |
 | CBD | 0.6923 | 0.9288 | 0.9383 |
 | CD | 0.6984 | 0.9275 | 0.9355 |
+
+
 #### Unanimity Vote
+
 
 | Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
 | :---: |:---: | :---: | :---: |
@@ -124,6 +128,8 @@ The corresponding Jupyter notebooks can be found in this respository following t
 | ED | 0.6509 | 0.9606 | 0.9581 |
 | CBD | 0.6519 | 0.9608 | 0.9590 |
 | CD | 0.6707 | 0.9606 | 0.9583 |
+
+
 ## Case study using Impro-Visor
 
 We used Impro-Visor to test the similarity measures that had the best results in our controlled experiments and for comparison is included a simple measure that is Euclidean Distance. For each group of melodies the similarity was calculated for the X axis to the Corpus created by the user. For the Y axis it was calculated with the corresponding solos of the composer pre-built grammar. For example the Tradings between User and Miles Davis were compared with User's corpus for the X axis and with the grammar solos of Miles Davis for the Y axis.
