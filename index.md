@@ -104,6 +104,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 ### Summary of F1 Scores
 #### Majority Vote
 | Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
+
 | :---: |:---: | :---: | :---: |
 | RNA | 0.7205 | **0.9309** | 0.9521 |
 | LA | 0.7462 | 0.9292 | 0.9552 |
