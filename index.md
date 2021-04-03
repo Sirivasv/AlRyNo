@@ -1,4 +1,4 @@
-{% include latex-support.html %}
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # RNA (Rhythm-Note Alignment)
 
@@ -17,7 +17,7 @@ The following sections describe the experiments and link to the code used on eac
 
  * [How it works?](#how-it-works?)
  * [Controlled Experiments](#controlled-experiments)
- * [Comparison with Expert annotations](#Comparison-with-expert-annotations)
+ * [Comparison with Expert annotations](#comparison-with-expert-annotations)
  * [Case study using Impro-Visor](#case-study-using-impro-visor)
 
 ## How it works?
