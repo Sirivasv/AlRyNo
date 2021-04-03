@@ -165,6 +165,89 @@ The corresponding Jupyter notebooks can be found in this respository following t
 |BSPLINE_recall|0.8465|1.0000|0.9887|
 |BSPLINE_specificity|0.8163|0.0000|0.6292|
 
+### Summary of Best ROC Values (closest to tpr=1.0 and fpr=0.0)
+
+#### Majority Vote
+
+
+| Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
+| :---: |:---: | :---: | :---: |
+|RNA_best_roc_value|0.4037|**0.2571**|0.5856|
+|RNA_best_roc_f1|0.7052|0.8778|0.9328|
+|RNA_best_roc_precision|0.6302|0.9014|0.9359|
+|RNA_best_roc_recall|0.8005|0.8553|0.9298|
+|RNA_best_roc_specificity|0.6032|0.4017|0.6557|
+|ED_best_roc_value|0.2656|0.2278|0.3704|
+|ED_best_roc_f1|0.6897|0.6718|0.7569|
+|ED_best_roc_precision|0.5390|0.9182|0.9278|
+|ED_best_roc_recall|0.9574|0.5297|0.6392|
+|ED_best_roc_specificity|0.3082|0.6981|0.7312|
+|CBD_best_roc_value|0.2681|0.2565|0.4215|
+|CBD_best_roc_f1|0.6900|0.6801|0.8490|
+|CBD_best_roc_precision|0.5401|0.9244|0.9208|
+|CBD_best_roc_recall|0.9549|0.5380|0.7877|
+|CBD_best_roc_specificity|0.3132|0.7186|0.6338|
+|CORR_best_roc_value|0.3141|0.0955|0.3737|
+|CORR_best_roc_f1|0.6630|0.7153|0.8577|
+|CORR_best_roc_precision|0.5915|0.8838|0.9092|
+|CORR_best_roc_recall|0.7540|0.6007|0.8117|
+|CORR_best_roc_specificity|0.5601|0.4948|0.5620|
+|LA_best_roc_value|0.4712|0.2435|0.6254|
+|LA_best_roc_f1|0.7413|0.8417|0.9340|
+|LA_best_roc_precision|0.6513|0.9025|0.9435|
+|LA_best_roc_recall|0.8602|0.7886|0.9247|
+|LA_best_roc_specificity|0.6111|0.4549|0.7008|
+|SIAM_best_roc_value|**0.6054**|0.2198|**0.7474**|
+|SIAM_best_roc_f1|0.7981|0.8480|0.9397|
+|SIAM_best_roc_precision|0.7304|0.8980|0.9674|
+|SIAM_best_roc_recall|0.8796|0.8032|0.9136|
+|SIAM_best_roc_specificity|0.7258|0.4166|0.8339|
+|BSPLINE_best_roc_value|0.5238|0.1299|0.6274|
+|BSPLINE_best_roc_f1|0.7539|0.7282|0.9291|
+|BSPLINE_best_roc_precision|0.7051|0.8902|0.9452|
+|BSPLINE_best_roc_recall|0.8099|0.6161|0.9136|
+|BSPLINE_best_roc_specificity|0.7139|0.5138|0.7139|
+
+
+#### Unanimity Vote
+
+| Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
+| :---: |:---: | :---: | :---: |
+|RNA_best_roc_value|0.4932|0.2401|0.6398|
+|RNA_best_roc_f1|0.7042|0.9010|0.9542|
+|RNA_best_roc_precision|0.5797|0.9441|0.9586|
+|RNA_best_roc_recall|0.8968|0.8616|0.9498|
+|RNA_best_roc_specificity|0.5963|0.3785|0.6901|
+|ED_best_roc_value|0.3432|0.2364|0.4305|
+|ED_best_roc_f1|0.6509|0.6859|0.8123|
+|ED_best_roc_precision|0.4902|0.9562|0.9506|
+|ED_best_roc_recall|0.9684|0.5347|0.7092|
+|ED_best_roc_specificity|0.3748|0.7017|0.7214|
+|CBD_best_roc_value|0.3432|**0.2409**|0.4788|
+|CBD_best_roc_f1|0.6519|0.7080|0.8582|
+|CBD_best_roc_precision|0.4889|0.9552|0.9512|
+|CBD_best_roc_recall|0.9779|0.5625|0.7818|
+|CBD_best_roc_specificity|0.3653|0.6784|0.6970|
+|CORR_best_roc_value|0.4157|0.0918|0.4522|
+|CORR_best_roc_f1|0.6586|0.3240|0.8638|
+|CORR_best_roc_precision|0.5721|0.9584|0.9461|
+|CORR_best_roc_recall|0.7758|0.1950|0.7947|
+|CORR_best_roc_specificity|0.6399|0.8968|0.6575|
+|LA_best_roc_value|0.5660|0.2031|0.6579|
+|LA_best_roc_f1|0.7394|0.8600|0.9590|
+|LA_best_roc_precision|0.6094|0.9425|0.9602|
+|LA_best_roc_recall|0.9401|0.7907|0.9578|
+|LA_best_roc_specificity|0.6260|0.4124|0.7001|
+|SIAM_best_roc_value|**0.7386**|0.1799|0.8243|
+|SIAM_best_roc_f1|0.8315|0.7476|0.9720|
+|SIAM_best_roc_precision|0.7566|0.9450|0.9813|
+|SIAM_best_roc_recall|0.9229|0.6184|0.9629|
+|SIAM_best_roc_specificity|0.8157|0.5615|0.8614|
+|BSPLINE_best_roc_value|0.6629|0.0774|0.7106|
+|BSPLINE_best_roc_f1|0.7903|0.4070|0.9422|
+|BSPLINE_best_roc_precision|0.7410|0.9455|0.9713|
+|BSPLINE_best_roc_recall|0.8465|0.2593|0.9147|
+|BSPLINE_best_roc_specificity|0.8163|0.8181|0.7959|
 
 ## Case study using Impro-Visor
 
