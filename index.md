@@ -102,7 +102,26 @@ The corresponding Jupyter notebooks can be found in this respository following t
 ![Image](./images/F1_UNAN_0_1.png)
 
 ### Summary of F1 Scores
-
+#### Majority Vote
+| Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
+| :---: |:---: | :---: | :---: |
+| RNA | 0.7205 | **0.9309** | 0.9521 |
+| LA | 0.7462 | 0.9292 | 0.9552 |
+| SIAM | **0.7981** | 0.9299 | **0.9677** |
+| BSPLINE | 0.7588 | 0.9277 | 0.9512 |
+| ED | 0.6915 | 0.9281 | 0.9372 |
+| CBD | 0.6923 | 0.9288 | 0.9383 |
+| CD | 0.6984 | 0.9275 | 0.9355 |
+#### Unanimity Vote
+| Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
+| :---: |:---: | :---: | :---: |
+| RNA | 0.7048 | **0.9612** | 0.9689 |
+| LA | 0.7394 | 0.9607 | 0.9701 |
+| SIAM | **0.8315** | 0.9608 | **0.9815** |
+| BSPLINE | 0.7903 | 0.9606 | 0.9704 |
+| ED | 0.6509 | 0.9606 | 0.9581 |
+| CBD | 0.6519 | 0.9608 | 0.9590 |
+| CD | 0.6707 | 0.9606 | 0.9583 |
 ## Case study using Impro-Visor
 
 We used Impro-Visor to test the similarity measures that had the best results in our controlled experiments and for comparison is included a simple measure that is Euclidean Distance. For each group of melodies the similarity was calculated for the X axis to the Corpus created by the user. For the Y axis it was calculated with the corresponding solos of the composer pre-built grammar. For example the Tradings between User and Miles Davis were compared with User's corpus for the X axis and with the grammar solos of Miles Davis for the Y axis.
