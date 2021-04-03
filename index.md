@@ -1,4 +1,4 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+{% include latex-support.html %}
 
 # RNA (Rhythm-Note Alignment)
 
@@ -103,6 +103,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 
 ### Summary of F1 Scores
 #### Majority Vote
+
 | Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
 | :---: |:---: | :---: | :---: |
 | RNA | 0.7205 | **0.9309** | 0.9521 |
@@ -113,6 +114,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 | CBD | 0.6923 | 0.9288 | 0.9383 |
 | CD | 0.6984 | 0.9275 | 0.9355 |
 #### Unanimity Vote
+
 | Name | 0 - 0.5 | 0.5 - 1 | 0 - 1 |
 | :---: |:---: | :---: | :---: |
 | RNA | 0.7048 | **0.9612** | 0.9689 |
