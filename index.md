@@ -31,7 +31,7 @@ $$
 RNA(\mathbf{A},\mathbf{B}) = 1 - \frac{|LCS_{\mathbf{A},\mathbf{B}}|}{\max{(|\mathbf{A}|,|\mathbf{B}|)}}
 $$ 
 
-To calculate the $LCS$ between both melodies, we first need to eliminate their octave dependence, that is to say, notes are extracted regardless of the octave or the MIDI height in which they are located. Meaning, this representation takes all C notes as being of the same class, even though a C in the 3rd octave is lower than a C in the 5th octave. This is because, usually, only the relative distance with respect to the scale is taken into account when constructing chords and progression, and not their absolute distance in semitones. 
+To calculate the LCS between both melodies, we first need to eliminate their octave dependence, that is to say, notes are extracted regardless of the octave or the MIDI height in which they are located. Meaning, this representation takes all C notes as being of the same class, even though a C in the 3rd octave is lower than a C in the 5th octave. This is because, usually, only the relative distance with respect to the scale is taken into account when constructing chords and progression, and not their absolute distance in semitones. 
 
 Given two melodies A and B represented as a note class sequence, the LCS of notes can be calculated using the following recursive function:
 
