@@ -25,7 +25,7 @@ The following sections describe the experiments and link to the code used on eac
 $RNA$ comes from the intuiton that simple features such as pitch and duration can be of great use in analysis tasks like music similarity evaluations. It was first proposed to use the duration of the notes as it is one of the most overlooked features on early similarity and distance measures tested. Also the penalizations for not matching strictly on the same pitch was worth of questioning if a more loose condition could improve the results. For this purpose the pitch matching is done using only the pitch class regardless on the octave. Now, just considering the amount of shared atomic elements like the ones described lack the judging of the more abstract structures present in music like the order in the melody, chords, motifs, etc. To tackle this issue an existing sequence matching algorithm was considered to modify and include the evaluation of the features described previously.
 The algorithm with the appropiate customization options that was selected is Local Alignment by considering its capabilites to consider relative order in the search of the longest common.
 
-To give a final score we can define it as the relation between the length of the Longest Common Subsequence (*LCS*) and the length of the longest melody from the two compared melodies *A* and *B*.To this effect, the $RNA$ between melodies $\mathbf{A}$ and $\mathbf{B}$ is calculated as follows:
+To give a final score we can define it as the relation between the length of the Longest Common Subsequence (*LCS*) and the length of the longest melody from the two compared melodies *A* and *B*. To this effect, the RNA between melodies A and B is calculated as follows:
 
 $$ 
 RNA(\mathbf{A},\mathbf{B}) = 1 - \frac{|LCS_{\mathbf{A},\mathbf{B}}|}{\max{(|\mathbf{A}|,|\mathbf{B}|)}}
@@ -33,7 +33,7 @@ $$
 
 To calculate the $LCS$ between both melodies, we first need to eliminate their octave dependence, that is to say, notes are extracted regardless of the octave or the MIDI height in which they are located. Meaning, this representation takes all C notes as being of the same class, even though a C in the 3rd octave is lower than a C in the 5th octave. This is because, usually, only the relative distance with respect to the scale is taken into account when constructing chords and progression, and not their absolute distance in semitones. 
 
-Given two melodies $\mathbf{A}$ and $\mathbf{B}$ represented as a note class sequence, the $LCS$ of notes can be calculated using the following recursive function:
+Given two melodies A and B represented as a note class sequence, the LCS of notes can be calculated using the following recursive function:
 
 $$
 \begin{split}
@@ -50,7 +50,7 @@ $$
 \end{split}
 $$
 
-where $\mathbf{P}_A$ and $\mathbf{P}_B$ are vectors calculated as:
+where P<sub>A</sub> and P<sub>B</sub> are vectors calculated as:
 
 $$
 \begin{split}
@@ -59,9 +59,9 @@ $$
 \end{split}
 $$
 
-where $start$ returns the starting point of a given note; and, $C_E$ is a scaling coefficient, the value of which was experimentally obtained as half the average of a typical $\mathbf{P}$ vector; in this case, it has a value of $64$.
+where start returns the starting point of a given note; and, C<sub>E</sub> is a scaling coefficient, the value of which was experimentally obtained as half the average of a typical P vector; in this case, it has a value of 64.
 
-The $|LCS_{\mathbf{A},\mathbf{B}}|$ factor in (\ref{eq_RNA}) is inherently maximized when the $LCS$ recursive function reaches a stop scenario (required similarly in the Local Alignment measure). To ensure this, the original call to the $LCS$ function should be with $i$ and $j$ initialized as the lengths of $A$ and $B$ respectively.
+The |LCS<sub>A,B</sub>| factor in is inherently maximized when the LCS recursive function reaches a stop scenario (required similarly in the Local Alignment measure). To ensure this, the original call to the LCS function should be with i and j initialized as the lengths of A and B respectively.
 
 ## Controlled Experiments
 
