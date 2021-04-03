@@ -238,7 +238,7 @@ The corresponding Jupyter notebooks can be found in this respository following t
 |LA_best_roc_precision|0.6094|0.9425|0.9602|
 |LA_best_roc_recall|0.9401|0.7907|0.9578|
 |LA_best_roc_specificity|0.6260|0.4124|0.7001|
-|SIAM_best_roc_value|**0.7386**|0.1799|0.8243|
+|SIAM_best_roc_value|**0.7386**|0.1799|**0.8243**|
 |SIAM_best_roc_f1|0.8315|0.7476|0.9720|
 |SIAM_best_roc_precision|0.7566|0.9450|0.9813|
 |SIAM_best_roc_recall|0.9229|0.6184|0.9629|
