@@ -39,8 +39,7 @@ $$
 \begin{split}
     &LCS(i,j) = \\
     &\begin{cases} 
-        0, \\
-        ~~~~~~\text{if } (i=0) \text{ or } (j=0) \\
+        0, \text{if } (i=0) \text{ or } (j=0) \\
         \max{(LCS(i - 1,j), LCS(i,j - 1), LCS(i - 1,j - 1) + subs(i, j))}, \\
         ~~~~~~\text{otherwise} \\
     \end{cases}    
