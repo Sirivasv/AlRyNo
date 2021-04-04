@@ -50,6 +50,19 @@ $$
 \end{split}
 $$
 
+where subs, is defined as:
+$$
+\begin{split}
+    &subs(i,j) = \\
+    &\begin{cases} 
+        1, \\
+        ~~~~~~\text{if } (\mathbf{A}[i] = \mathbf{B}[j]) \text{ and }\\
+        ~~~~~~~~~~(\mathbf{P}_{A}[i] - \mathbf{P}_{B}[j]) < (\mathbf{P}_{A}[i] + \mathbf{P}_{B}[j]) / C_E\\
+        0, otherwise \\
+    \end{cases}    
+\end{split}
+$$
+
 where P<sub>A</sub> and P<sub>B</sub> are vectors calculated as:
 
 $$
