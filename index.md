@@ -25,6 +25,8 @@ The following sections describe the experiments and link to the code used on eac
 RNA comes from the intuiton that simple features such as pitch and duration can be of great use in analysis tasks like music similarity evaluations. It was first proposed to use the difference of start times of the notes as it is one of the most overlooked features on early similarity and distance measures tested. Also the penalizations for not matching strictly on the same pitch was worth of questioning if a more loose condition could improve the results. For this purpose the pitch matching is done using only the pitch class regardless on the octave. Now, just considering the amount of shared atomic elements like the ones described lack the judging of the more abstract structures present in music like the order in the melody, chords, motifs, etc. To tackle this issue an existing sequence matching algorithm was considered to modify and include the evaluation of the features described previously.
 The algorithm with the appropiate customization options that was selected is Local Alignment by considering its capabilites to consider relative order in the search of the longest common.
 
+![Image](./images/RNA_describing_match.png)
+
 To give a final score we can define it as the relation between the length of the Longest Common Subsequence (*LCS*) and the length of the longest melody from the two compared melodies *A* and *B*. To this effect, the RNA between melodies A and B is calculated as follows:
 
 $$ 
