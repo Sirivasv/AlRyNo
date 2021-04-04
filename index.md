@@ -41,9 +41,6 @@ $$
     &\begin{cases} 
         0, \\
         ~~~~~~\text{if } (i=0) \text{ or } (j=0) \\
-        LCS(i - 1,j - 1) + 1, \\
-        ~~~~~~\text{if } (\mathbf{A}[i] = \mathbf{B}[j]) \text{ and }\\
-        ~~~~~~~~~~(\mathbf{P}_{A}[i] - \mathbf{P}_{B}[j]) < (\mathbf{P}_{A}[i] + \mathbf{P}_{B}[j]) / C_E\\
         \max{(LCS(i - 1,j), LCS(i,j - 1), LCS(i - 1,j - 1) + subs(i, j))}, \\
         ~~~~~~\text{otherwise} \\
     \end{cases}    
@@ -51,6 +48,8 @@ $$
 $$
 
 where subs, is defined as:
+
+
 $$
 \begin{split}
     &subs(i,j) = \\
