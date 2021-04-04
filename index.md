@@ -70,9 +70,10 @@ $$
 \end{split}
 $$
 
-where start returns the starting point of a given note; and, C<sub>E</sub> is a scaling coefficient, the value of which was experimentally obtained as half the average of a typical P vector; in this case, it has a value of 64.
+where start returns the starting point of a given note; and, C<sub>E</sub> is a scaling coefficient, the value of which was experimentally obtained as half the average of a typical P vector; in this case, it has a value of 64. This was implemented in order to incorporate a threshold that could make the distiction of significant differences between the notes. In this case we calculate how much the difference should be in order to be noticeable for the algorithm. It wouldn't be appropiate to define a fixed value because of how much different musical pieces could be, instead what is fixed is the scale related to the onset times of each song, with the hypothesis to being able to suit multiple melodic sets.
 
 The cardinality of the LCS<sub>A,B</sub> factor in is inherently maximized when the LCS recursive function reaches a stop scenario (required similarly in the Local Alignment measure). To ensure this, the original call to the LCS function should be with i and j initialized as the lengths of A and B respectively.
+
 
 ## Controlled Experiments
 
